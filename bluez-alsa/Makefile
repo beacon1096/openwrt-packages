@@ -28,7 +28,7 @@ define Package/bluez-alsa/description
   ALSA plugin supporting Bluetooth audio
 endef
 
-CONFIGURE_ARGS += --enable-aac --disable-rfcomm
+CONFIGURE_ARGS += --enable-aac --disable-rfcomm --disable-aplay
 
 define Package/bluez-alsa/install
 	$(INSTALL_DIR) $(1)/etc/alsa/conf.d/
