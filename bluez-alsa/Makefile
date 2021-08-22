@@ -19,7 +19,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/bluez-alsa
   SECTION:=sound
   CATEGORY:=Sound
-  DEPENDS:=+alsa-lib +bluez-daemon +glib2 +sbc +fdk-aac @LINUX_5_4
+  DEPENDS:=+alsa-lib +bluez-daemon +glib2 +sbc +fdk-aac +libdbus @LINUX_5_4
   TITLE:=Bluetooth Audio ALSA backend
   URL:=https://github.com/Arkq/bluez-alsa
 endef
